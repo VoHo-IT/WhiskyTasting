@@ -9,5 +9,12 @@ namespace WhiskyTasting.Controllers
         {
             return View();
         }
+        public ActionResult Suchen(string userName, string herkunft)
+        {
+            ViewBag.userName = userName;
+            ViewBag.referer = herkunft;
+
+            return View();
+        }
     }
 }
